@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>User Registration</h2>
+     <form action="/submit_registration" method="POST">
+        
+        <div>
+            <label for="full_name">Name:</label>
+            <!-- input type="text" for general text input -->
+            <input type="text" id="full_name" name="full_name" required>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="email_address">Email:</label>
+            <!-- input type="email" provides email-specific validation in browsers -->
+            <input type="email" id="email_address" name="email_address" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="age">Age:</label>
+            <!-- input type="number" restricts input to numerical values -->
+            <!-- min and max attributes enforce a valid range -->
+            <input type="number" id="age" name="age" min="1" max="120" required>
+        </div>
+
+        <br>
+
+        <!-- The submit button sends the form data to the specified action URL -->
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
